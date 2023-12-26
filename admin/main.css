@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+body{
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+}
+:root{
+    --background-color: #ffffff;
+    --primary-color: #717171;
+    --secondary-color: #581ADB;
+    --secondary-shadow-color:#581ADB59; 
+    --black-color: #222222;
+    --white-text-color: #FFFFFF;
+    --border-primary-color: #DDDDDD;
+    --text-bth-color: #ee0039;
+    --text-black-color: #222222;
+}
+
+/* ==================================================
+                            HEADER
+====================================================*/
+header{
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--border-primary-color);
+}
+/* Title */
+header h3 a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+header h3{
+    font-size: 24px; 
+    font-weight: 800; 
+}
+
+/* right panel */
+header .Sign{
+    display: flex;
+    align-items: center;
+    width: inherit;
+    justify-content: space-between;
+}
+
+/* на каждый элемент */
+header .Sign div{
+    border-radius: 30px;
+    margin-left: 10px;
+    border: 1px solid var(--border-primary-color);
+    transition:
+        box-shadow 1s ease,
+        scale 0.5s ease;
+}
+
+/* Language */
+header .Sign .lang{
+    border-radius: 50%;
+    padding: 0px;
+    height: 32px;
+    width: 32px;
+    border: none;
+    background: url(img/Component\ 1.svg) no-repeat;
+}
+header .Sign .lang:hover{
+    transition: 0.5s;
+    scale: 1.25;
+}
+
+/* Language */
+header .Sign .lang{
+    border-radius: 50%;
+    padding: 0px;
+    height: 32px;
+    width: 32px;
+    border: none;
+    background: url(img/Component\ 1.svg) no-repeat;
+}
+header .Sign .lang:hover{
+    transition: 0.5s;
+    scale: 1.25;
+}
+
+
+/* Sign in */
+header .Sign .SignIn img{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+header .Sign .SignIn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0px 6px 16px;
+}
+
+header .Sign i{                    
+    padding-left: 20px; 
+}
+
+
+main{
+    width: 85%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 18% 82%;
+}
+main aside {
+    background-color: #f6f6f6;
+    padding: 20px;
+    box-shadow: 5px 0 5px rgba(103, 103, 103, 0.5);
+    position: relative;
+    z-index: 10; 
+}
+
+
+main aside .block
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 2px 10px 2px 8px;
+    border: 1px solid #f6f6f6;
+}
+main aside .block:hover
+{
+    border: 1px solid #581ADB;
+    color: #581ADB;
+    background-color: #e1d8f8;
+}
+main aside .block:hover .side-icons {
+    filter: invert(32%) sepia(92%) saturate(4449%) hue-rotate(247deg) brightness(97%) contrast(101%);
+}
+
+  
+main aside .block .side-icons {
+    margin-right: 10px;
+  }
+  
+  
+  .hr-comp {
+      margin-left: -20px; 
+      margin-right: -20px;
+      border: none;
+      height: 1px; 
+      background-color: #e1e0e0; 
+    }
+    .comp{
+        font-size: 24px;
+        font-weight: 800;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    main section
+      {
+        background-color: #eaeaea;
+        padding: 20px;
+      }
+
+      main section .upper-block
+      {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+      main section .upper-block .card {
+        width:25%; 
+        background-color: #f6f6f6; 
+        box-shadow: 5px 5px 3px 0 rgba(0, 0, 0, 0.2); 
+        padding: 20px;
+        height: 120px;
+        margin-right: 10px;
+        margin-top: 20px;
+      }
+     .bottom-text {
+        display: flex; 
+        align-items: flex-end; 
+        justify-content: flex-start;
+        margin: 0px;
+        margin-top: 20px;
+    }
+   .bottom-text .small-text
+    {
+        color: #717171;
+        margin: 0px;
+    }
+    
+    .small-picture {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    main section .flying-block .flying-image{
+        filter: brightness(0) invert(1);
+        width: 35px;
+        height: 35px;
+    }
+   .card .block
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: right;
+        position: relative;
+    }
+  .card .block .space 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+   .block .flying-block {
+        width: 80px;
+        height: 80px;
+        background-color: #341082;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+
+        position: absolute;
+        top: -38px;  
+        left: 0px;
+    }
+    main section .upper-block .card:nth-child(2) .block .flying-block {
+        background-color: #531ace;
+    }
+    main section .upper-block .card:nth-child(3) .block .flying-block {
+        background-color: #7539f6;
+    }
+    main section .upper-block .card:nth-child(4) .block .flying-block {
+        background-color: #9462ff;
+    }
+    
+
+   .medium-text
+    {
+        font-size: 14px;
+        font-weight: 400;
+        color:#717171;
+        margin: 0px;
+        right: 0px;
+    }
+    .text-numbers
+    {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    main section .diagram 
+    {
+        width: 100%;
+        height: auto;
+    }
+    main section .diagram .dicard {
+        width:33%; 
+        background-color: #f6f6f6; 
+        box-shadow: 5px 5px 3px 0 rgba(0, 0, 0, 0.2); 
+        padding: 20px;
+        margin-right: 10px;
+      }
+      main section .diagram
+      {
+        display: flex;
+        flex-direction: row;
+        margin-top: 60px;
+      }
+      main section .diagram .dicard .diagram-block {
+        background-color: #341082;
+        display: flex; 
+        justify-content: center; 
+        padding: 30px 10px; 
+        height: 160px;
+        position: relative; 
+        top: -45px; 
+      }
+      
+      main section .diagram .dicard:nth-child(2) .diagram-block {
+        background-color: #7539f6;
+    }
+    main section .diagram .dicard:nth-child(3) .diagram-block {
+        background-color: #9462ff;
+    }
+
+      .diagram-image {
+        width: 100%;
+        height: auto; 
+      }
+      .space .text 
+      {
+        margin: 0px;
+        margin-top: -25px;
+        margin-bottom: 5px;
+      }
+
+      .tasks {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        padding: 20px;
+    }
+    
+    .tbl-row {
+        display: flex;
+        align-items: center; 
+        margin-bottom: 10px; 
+    }
+    
+    .tbl-checkbox {
+        margin-right: 10px; 
+    }
+    
+    .text-inside {
+        flex-grow: 1; 
+    }
+    .td
+    {
+        flex-wrap: nowrap;
+        display: flex;
+    }
+    .round-btn {
+        width: 30px; 
+        height: 30px;
+        border-radius: 50%; 
+        margin-left: 5px;
+        border: none; 
+        cursor: pointer; 
+        background-size: cover; 
+        margin-left: 10px;
+    }
+    
+    .round-btn-pencil {
+        background-image: url('img/pencil.svg'); 
+    }
+    
+    .round-btn-cross {
+        background-image: url('img/crosscirclehd_106118.svg'); 
+    }
+
+    .tables
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .tables .tasks, .stats
+    {
+        width: 50%;
+        background-color: #f6f6f6; 
+        box-shadow: 5px 5px 3px 0 rgba(0, 0, 0, 0.2); 
+        padding: 20px;
+        margin-right: 10px;
+        margin-top: 60px;
+    }
+    .tbl-header
+    {
+        display: flex;
+        flex-direction: row;
+        background-color: #341082;
+        position: relative;
+        top: -40px;
+        color: #e1d8f8;
+        padding: 10px;
+        text-align: center;
+        justify-content: flex-start;
+        margin-bottom: -20px;
+        height: 60px;
+        
+    }
+   .tbl-header div, .text-in {
+        display: flex;
+        align-items: center; 
+        padding: 0px 15px;
+    }
+
+    .tbl-header div:hover {
+        background-color: #5a18e8;
+    }
+    
+    .tbl-ico {
+        margin-right: 10px;
+    }
+    
+    .text-inside {
+        margin: 0;
+    }
+    .tbl-row + hr {
+    border: none; 
+    height: 1px; 
+    background-color: #848484; 
+    margin: 10px 0; 
+}
+
+.tbl-header-st
+{
+    display: flex;
+        flex-direction: column;
+        background-color: #9462ff;
+        position: relative;
+        top: -40px;
+        color: #e1d8f8;
+        padding: 10px;
+        justify-content: center;
+        margin-bottom: -20px;
+        height: 60px;
+        text-align: left;
+}
+.tbl-header-st p{
+    margin: 0px;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px 8px;
+    text-align: left;
+    border-bottom: 1px solid #e1e0e0;
+}
+.wrap
+{
+    flex-wrap: nowrap;
+    display: flex;
+
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.tbl-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer; 
+
+    appearance: none; 
+    background-color: #f6f6f6; 
+    border: 2px solid #ddd; 
+    border-radius: 4px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tbl-checkbox:checked {
+    background-color: #4614b1; 
+    border-color: #4614b1; 
+}
+
+.tbl-checkbox:checked::after {
+    content: ''; 
+    width: 10px;
+    height: 10px;
+    background-color: white; 
+    border-radius: 50%; 
+}
+footer{
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+footer .box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+footer .box .left-panel
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer .box .left-panel h5
+{
+    margin-right: 20px;
+}
+footer .box .right-panel p
+{
+    color: #717171;
+}
+footer .hr-comp  
+{
+    background-color:#adadad;
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    main section .diagram .dicard .diagram-block {
+        height: auto;
+    }
+    .tables
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tables .tasks, .stats{ 
+        width: 90%;
+    }
+    main section .upper-block .card {
+        width: 40%;
+    }
+    main section .upper-block {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    main section .upper-block .card:nth-child(3),
+    main section .upper-block .card:nth-child(4) {
+        margin-top: 60px;
+    }
+    main {
+        width: 100%;
+        grid-template-columns: 22% 78%;
+    }
+  }
+  @media screen and (min-width: 650px) and (max-width: 800px) {
+    main section .diagram .dicard .diagram-block {
+        height: auto;
+    }
+    .tables
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tables .tasks, .stats{ 
+        width: 90%;
+    }
+    main section .upper-block .card {
+        width: 40%;
+    }
+    main section .upper-block {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    main section .upper-block .card:nth-child(3),
+    main section .upper-block .card:nth-child(4) {
+        margin-top: 60px;
+    }
+    main {
+        width: 100%;
+        grid-template-columns: none;
+    }
+    aside
+    {
+        display: none;
+    }
+    .comp::before {
+        content: url('img/menu_black_24dp.svg');
+        margin-right: 5px; 
+        vertical-align: -3px; 
+      }
+  }
+  @media screen and (min-width: 500px) and (max-width: 650px) {
+    main section .diagram .dicard .diagram-block {
+        height: auto;
+    }
+    main section .diagram {
+        flex-direction: column;
+    }
+    main section .diagram .dicard {
+        width: 90%;
+
+    }
+    main section .diagram .dicard:not(:first-child) {
+        margin-top: 60px;
+    }
+    
+    .tables
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tables .tasks, .stats{ 
+        width: 90%;
+    }
+    main section .upper-block .card {
+        width: 39%;
+    }
+    main section .upper-block {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    main section .upper-block .card:nth-child(3),
+    main section .upper-block .card:nth-child(4) {
+        margin-top: 60px;
+    }
+    main {
+        width: 100%;
+        grid-template-columns: none;
+    }
+    aside
+    {
+        display: none;
+    }
+    .comp::before {
+        content: url('img/menu_black_24dp.svg');
+        margin-right: 5px; 
+        vertical-align: -3px; 
+      }
+  }
+  
+  @media screen and (max-width: 500px) {
+    main section .diagram .dicard .diagram-block {
+        height: auto;
+    }
+    main section .diagram {
+        flex-direction: column;
+    }
+    main section .diagram .dicard {
+        width: 90%;
+
+    }
+    main section .diagram .dicard:not(:first-child) {
+        margin-top: 60px;
+    }
+    
+    .tables
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tables .tasks, .stats{ 
+        width: 90%;
+    }
+    main section .upper-block .card {
+        width: 95%;
+    }
+    main section .upper-block {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    main section .upper-block .card:nth-child(3),
+    main section .upper-block .card:nth-child(4),
+    main section .upper-block .card:nth-child(2) {
+        margin-top: 60px;
+    }
+    main {
+        width: 100%;
+        grid-template-columns: none;
+    }
+    aside
+    {
+        display: none;
+    }
+    .comp::before {
+        content: url('img/menu_black_24dp.svg');
+        margin-right: 5px; 
+        vertical-align: -3px; 
+      }
+  }
+  
