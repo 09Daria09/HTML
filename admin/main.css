@@ -123,15 +123,22 @@ main aside .block
     padding: 2px 10px 2px 8px;
     border: 1px solid #f6f6f6;
 }
-main aside .block:hover
-{
+.menu a {
+    text-decoration: none;
+}
+
+main aside .block:hover,
+main aside .block.active {
     border: 1px solid #581ADB;
     color: #581ADB;
     background-color: #e1d8f8;
 }
-main aside .block:hover .side-icons {
+
+main aside .block:hover .side-icons,
+main aside .block.active .side-icons {
     filter: invert(32%) sepia(92%) saturate(4449%) hue-rotate(247deg) brightness(97%) contrast(101%);
 }
+
 
   
 main aside .block .side-icons {
@@ -427,7 +434,6 @@ th, td {
 {
     flex-wrap: nowrap;
     display: flex;
-
 }
 
 th {
